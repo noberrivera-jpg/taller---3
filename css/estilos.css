@@ -1,0 +1,606 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+a {
+    color: inherit;
+}
+
+/* Menu Principal */
+
+.menu-principal {
+    width: 700px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.menu-principal h1 {
+    margin-bottom: 10px;
+}
+
+.menu-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+    margin: 30px auto;
+}
+
+.menu-lista a {
+    padding: 12px;
+    background: #eeeeee;
+    border: 1px solid #777;
+    text-decoration: none;
+}
+
+/* Ejercicio 1 */
+
+.exercise1 {
+    width: 900px;
+    margin: 25px auto;
+}
+
+.company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 125px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    width: 65px;
+    height: 65px;
+    border: 5px solid #777;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    color: #666;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.brand p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 11px;
+}
+
+.languages span {
+    border: 1px solid #888;
+    padding: 2px 5px;
+    margin-left: 3px;
+}
+
+.dark-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: linear-gradient(#777, #222);
+    padding: 7px 10px;
+}
+
+.dark-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dark-nav input {
+    margin-left: auto;
+    width: 145px;
+}
+
+.wire-image {
+    border: 1px solid #555;
+    display: grid;
+    place-items: center;
+    color: #555;
+    position: relative;
+    overflow: hidden;
+}
+
+.wire-image::before,
+.wire-image::after {
+    content: "";
+    position: absolute;
+    width: 145%;
+    height: 1px;
+    background: #777;
+}
+
+.wire-image::before {
+    transform: rotate(25deg);
+}
+
+.wire-image::after {
+    transform: rotate(-25deg);
+}
+
+.wire-image {
+    min-height: 100px;
+    font-size: 12px;
+}
+
+.hero-placeholder {
+    height: 190px;
+    margin: 12px 0;
+}
+
+.layout-e1 {
+    display: grid;
+    grid-template-columns: 2.4fr 1fr;
+    gap: 15px;
+}
+
+.box {
+    border: 1px solid #aaa;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.box h2 {
+    margin: 0 0 10px;
+    background: linear-gradient(#888, #555);
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.story {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    gap: 20px;
+}
+
+.portrait-placeholder {
+    height: 145px;
+}
+
+.lines {
+    line-height: 1.45;
+    color: #777;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 0;
+}
+
+.newsletter h2 {
+    font-size: 14px;
+}
+
+.newsletter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.small-image {
+    height: 90px;
+}
+
+.newsletter article p {
+    font-size: 8px;
+}
+
+.newsletter h3 {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.review-lines {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #777;
+}
+
+.social h2,
+.navigate h2 {
+    text-align: center;
+}
+
+.video-box {
+    border: 1px solid #777;
+    height: 145px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.video-box span {
+    font-size: 30px;
+    color: #aaa;
+}
+
+.controls {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background: #111;
+    color: white;
+    font-size: 11px;
+}
+
+.social button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navigate ul {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.footer-e1 {
+    border-top: 7px solid #777;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 11px;
+}
+
+.footer-e1 a {
+    margin: 0 10px;
+}
+
+/* Ejercicio 2 */
+
+.exercise2 {
+    width: 720px;
+    margin: 20px auto;
+    background: #eee;
+}
+
+.karma-header {
+    height: 45px;
+    background: #29324d;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.karma-logo {
+    width: 230px;
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.karma-header nav {
+    display: flex;
+    gap: 18px;
+}
+
+.karma-header a {
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.karma-hero {
+    margin: 0 35px;
+    background: #ddd;
+}
+
+.flower-placeholder {
+    height: 245px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 24px;
+    background: radial-gradient(
+        circle at 55% 40%,
+        #888,
+        #333 65%,
+        #222
+    );
+}
+
+.karma-hero p {
+    margin: 0;
+    padding: 7px;
+    background: #d96565;
+    color: white;
+    font-size: 8px;
+}
+
+.dots {
+    text-align: center;
+    padding: 5px;
+    font-size: 8px;
+}
+
+.karma-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 12px 0;
+    background: #f8f8f8;
+}
+
+.blue-title,
+.orange-title {
+    min-height: 95px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 28px;
+}
+
+.blue-title {
+    background: #4c9ac4;
+}
+
+.orange-title {
+    background: #f18a00;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    font-size: 9px;
+}
+
+.round-image,
+.team-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #aaa, #555);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 8px;
+}
+
+.team-row {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.team-members div {
+    text-align: center;
+    font-size: 9px;
+}
+
+.team-members .team-image {
+    margin-bottom: 5px;
+}
+
+.team-members small,
+.team-members span {
+    display: block;
+}
+
+.services-row {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.service-content {
+    display: flex;
+    align-items: stretch;
+    background: #f18a00;
+    color: white;
+}
+
+.service-icons {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icons span {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    background: #111;
+    border-bottom: 1px solid white;
+}
+
+.service-icons span:first-child {
+    background: #f18a00;
+}
+
+.service-content > div:last-child {
+    padding: 12px;
+    font-size: 9px;
+}
+
+.service-content h2 {
+    font-size: 13px;
+}
+
+/* Navegacion inferior */
+
+.bottom-links {
+    text-align: center;
+    padding: 18px 0;
+    font-size: 12px;
+}
+
+.bottom-links a {
+    margin: 0 8px;
+}
+
+/* Ejercicio 3 */
+
+.exercise3 {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.greek-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.greek-top nav a {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 15px;
+    color: #182a65;
+}
+
+.search-form input {
+    border-radius: 15px;
+    width: 80px;
+}
+
+.greek-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 145px;
+    gap: 18px;
+}
+
+.greek-left {
+    border: 2px solid #555;
+    padding: 8px;
+}
+
+.greek-left h1 {
+    font-size: 12px;
+    margin: -18px 0 4px 0;
+    background: white;
+    width: fit-content;
+}
+
+.greek-main-image {
+    height: 180px;
+}
+
+.greek-left p,
+.greek-center p {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+.greek-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 10px;
+}
+
+.greek-small-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.greek-small-grid div {
+    height: 45px;
+    background: #eee;
+}
+
+.greek-center-image {
+    height: 145px;
+}
+
+.greek-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.side-image {
+    height: 62px;
+}
+
+/* Ejercicio 4 */
+
+.form-page {
+    width: 700px;
+    margin: 70px auto;
+}
+
+.form-page form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-page h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    align-items: center;
+    margin-bottom: 17px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.form-row input {
+    height: 24px;
+    font-size: 14px;
+}
+
+.form-buttons {
+    margin-top: 5px;
+}
+
+.form-buttons button {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Adaptacion para pantallas pequeñas */
+
+@media (max-width: 950px) {
+
+    .exercise1,
+    .exercise2,
+    .exercise3,
+    .form-page {
+        width: 94%;
+    }
+
+    .layout-e1,
+    .greek-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .side-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .karma-header nav {
+        gap: 7px;
+    }
+}

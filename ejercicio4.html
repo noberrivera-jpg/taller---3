@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulario con Validaciones Avanzadas del Taller Practico # 3.">
+    <meta name="keywords" content="HTML, CSS, formulario, validaciones, CECAR">
+    <meta name="user" content="student">
+    <title>Ejercicio # 4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <main class="form-page">
+
+        <form action="#" method="get">
+
+            <h1>Formulario con Validaciones Avanzadas</h1>
+
+            <div class="form-row">
+
+                <label for="nombre">
+                    Nombre Completo:
+                </label>
+
+                <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    placeholder="Ej: Juan Pérez Gómez"
+                    pattern="^[A-ZÁÉÍÓÚÜÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ]*(?:[ ]+[A-ZÁÉÍÓÚÜÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ]*)+$"
+                    title="Empieza con mayúscula y acepta letras y espacios."
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="correo">
+                    Correo Electrónico:
+                </label>
+
+                <input
+                    id="correo"
+                    name="correo"
+                    type="email"
+                    placeholder="Ej: usuario@correo.com"
+                    pattern="^[^@\s]+@[^@\s]+\.[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{2,}$"
+                    title="Ejemplo válido: usuario@correo.com"
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <input
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    placeholder="Ej: +52 55 1234 5678"
+                    pattern="^\+?[0-9 .-]+$"
+                    title="Acepta números, espacios, guiones, puntos y un código de país con +."
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="direccion">
+                    Dirección:
+                </label>
+
+                <input
+                    id="direccion"
+                    name="direccion"
+                    type="text"
+                    placeholder="Ej: Calle 123, Colonia Centro"
+                    pattern="^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9 .,#-]+$"
+                    title="Acepta números, letras, espacios y los símbolos . , - #."
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="postal">
+                    Código Postal:
+                </label>
+
+                <input
+                    id="postal"
+                    name="postal"
+                    type="text"
+                    placeholder="Ej: 28001"
+                    pattern="^[0-9]{5}$"
+                    maxlength="5"
+                    inputmode="numeric"
+                    title="Debe contener exactamente 5 números."
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="usuario">
+                    ID de Usuario:
+                </label>
+
+                <input
+                    id="usuario"
+                    name="usuario"
+                    type="text"
+                    placeholder="Ej: User123"
+                    required
+                >
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+                <button type="reset">
+                    Restablecer
+                </button>
+
+            </div>
+
+        </form>
+
+        <nav class="bottom-links">
+            <a href="index.html">Menu Principal</a>
+            <a href="ejercicio1.html">Ejercicio # 1</a>
+            <a href="ejercicio2.html">Ejercicio # 2</a>
+            <a href="ejercicio3.html">Ejercicio # 3</a>
+        </nav>
+
+    </main>
+
+</body>
+</html>
